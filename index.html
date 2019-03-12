@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Layout</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <section class="container text-center">
+        <h1>Nagłówek h1<br><small>Podtytuł zagnieżdżony</small></h1>
+        <button class="btn btn-primary">Niebieski przycisk</button>
+    </section>
+    <section class="container text-center">
+        <h2>Ucho cholewki - Galeria</h2>
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12"><img class="img-responsive" src="https://picsum.photos/400/400/?random?sig=1"
+                    title="image 1" alt="image 1"></div>
+            <div class="col-md-3 col-sm-6 col-xs-12"><img class="img-responsive" src="https://picsum.photos/400/400/?random?sig=2"
+                    title="image 2" alt="image 2"></div>
+            <div class="col-md-3 col-sm-6 col-xs-12"><img class="img-responsive" src="https://picsum.photos/400/400/?random?sig=3"
+                    title="image 3" alt="image 3"></div>
+            <div class="col-md-3 col-sm-6 col-xs-12"><img class="img-responsive" src="https://picsum.photos/400/400/?random?sig=4"
+                    title="image 4" alt="image 4"></div>
+        </div>
+    </section>
+    <section class="container">
+        <table class="table table-striped table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>Imię</th>
+                    <th>Nazwisko</th>
+                    <th>Pseudonim</th>
+                    <th>e-mail</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Robert</td>
+                    <td>Adamski</td>
+                    <td>Rob 3</td>
+                    <td>robam@robam.pl 4</td>
+                </tr>
+                <tr>
+                    <td>Adam</td>
+                    <td>MArecki</td>
+                    <td>Adi</td>
+                    <td>a.mar@emai.pl</td>
+                </tr>
+                <tr>
+                    <td>Marek</td>
+                    <td>Robertowski</td>
+                    <td>Maro</td>
+                    <td>mar.rob@emai.pl</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section class="container">
+        <form>
+            <div class="form-group">
+                <label for="NazwaUzytkownika">Nazwa użytkownika</label>
+                <input type="text" class="form-control" id="NazwaUzytkownika" placeholder="Nazwa użytkownika" required>
+            </div>
+            <div class="form-group">
+                <label for="Haslo">Password</label>
+                <input type="password" class="form-control" id="Haslo" placeholder="Hasło" required>
+            </div>
+            <div class="form-group">
+                <label for="przykladowyEmail">Email</label>
+                <input type="email" class="form-control" id="przykladowyEmail" placeholder="Email" required>
+            </div>
+            <textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" required></textarea>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary btn-lg">Wyślij</button>
+            </div>
+        </form>
+
+    </section>
+</body>
+
+</html>
